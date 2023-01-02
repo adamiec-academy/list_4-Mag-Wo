@@ -1,7 +1,7 @@
 def my_split(text):
 
     list = []
-    word = ''
+    word = ""
 
     for letter in text:
         if letter != " ":
@@ -10,7 +10,5 @@ def my_split(text):
             list.append(word)
             word = ""
 
-    if word != "":
-        list.append(word)
-    
+      
     return list
