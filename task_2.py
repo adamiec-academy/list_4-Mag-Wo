@@ -1,14 +1,17 @@
 def my_split(text):
 
-    list = []
+    result = []
     word = ""
 
     for letter in text:
         if letter != " ":
            word += letter
         elif word != "":
-            list.append(word)
+            result.append(word)
             word = ""
+     
+    if word != "":
+        result.append(word)
 
       
-    return list
+    return result
